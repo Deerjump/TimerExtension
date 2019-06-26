@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="style.css">
+   <script src="index.js"></script>
+   <title>Document</title>
+</head>
+<body>
+   <div class="body">
+      <div class="billboard">
+         <h5>Set alerts on this page</h5>
+      </div>  
+      <div id="titleBox">
+         <h3>Alert Title</h3>
+         <input id="title" type="text" placeholder="Alert Title" value="Time's up!"><br>
+      </div>
+      <br>
+      <div id="timeBox">
+         <h3>Time</h3>
+         <input id="time" style="width: 100px" type="number" placeholder="30" value="5">
+         <select id="unit" >
+            <option value="second">Seconds</option>
+            <option value="minute" selected="selected">Minutes</option>
+            <option value="hour">Hours</option>
+         </select>
+      </div>
+      <br>
+      <input type="checkbox"id="repeat">Repeating
+      <br>
+      <div class="buttons">
+         <button id="setAlert">Set Alert</button>
+         <button id="stopAlert">Stop Alerts</button>
+      </div>
+   </div>
+</body>
+</html>
