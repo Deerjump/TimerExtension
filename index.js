@@ -14,7 +14,7 @@ window.onload = function(){
       console.log(result);
    });
 
-   setAlertBtn = document.getElementById('setAlert');
+   setAlertBtn = document.querySelector('#setAlert');
    stopAlertBtn = document.querySelector('#stopAlert');
 
    setAlertBtn.addEventListener('click', () => {   

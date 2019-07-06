@@ -23,7 +23,11 @@ function displayNotification(title,time,unit){
    let options = {
       body: `It's been ${time} ${unit}s`
    }
-   let n = new Notification(`${title}`, options);   
+
+   let today = new Date();
+
+   let heading = `${title} - ${today.toLocaleTimeString()}`
+   let n = new Notification(heading, options);   
 }
 
 chrome.runtime.onConnect.addListener(function(port) {
