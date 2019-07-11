@@ -7,6 +7,11 @@ function getStorage(){
    chrome.storage.sync.get(['info'], result => {
       if(result.info){
          console.log(result);
+         if(result.info.repeating == false)
+            chrome.storage.sync.remove(['info'], result=> {
+               console.log('Removing initial timer');
+               console.log(result);
+            })
          timeout = window.setTimeout(() => {
             console.log("Creating notification")
             displayNotification(result.info.title,result.info.time,result.info.unit);
